@@ -1,0 +1,55 @@
+<%- include("./../incluir/header.ejs") %>
+    <div id="layoutSidenav_content"> 
+        <main>
+            <div class="container-fluid">
+                <h1 class="mt-4">Dashboard</h1>
+                <ol class="breadcrumb mb-4">
+                    <li class="breadcrumb-item active">Dashboard</li>
+                </ol>
+
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <i class="fas fa-table mr-1"></i>
+                        Nueva Usuario 
+                    </div>
+                    <div class="card-body">
+                        <form action="" method="POST" >
+                            <div class="form-group">
+                                <label class="small mb-1" >Nombre:</label>
+                                <input class="form-control py-4" name="nombre" type="text" placeholder="Nueva nombre" 
+                                value="<%=data.nombre%>"/>
+                            </div>
+                            <div class="form-group">
+                                <label class="small mb-1" >Apellido:</label>
+                                <input class="form-control py-4" name="apellido" type="text" placeholder="Nueva apellido" 
+                                value="<%=data.apellido%>"/>
+                            </div>
+                            <div class="form-group">
+                                <label class="small mb-1" >Correo:</label>
+                                <input class="form-control py-4" name="correo" type="text" placeholder="Nueva correo" 
+                                value="<%=data.correo%>"/>
+                            </div>
+                            <div class="form-group">
+                                <label class="small mb-1" >Telefono:</label>
+                                <input class="form-control py-4" name="telefono" type="text" placeholder="Nueva telefono" 
+                                value="<%=data.telefono%>"/>
+                            </div>
+                            <div class="form-group">
+                                <label class="small mb-1" >Clave:</label>
+                                <input class="form-control py-4" name="clave" type="text" placeholder="Nueva clave" 
+                                value="<%=data.clave%>"/>
+                            </div>
+                            <div class="form-group">
+                                <label class="small mb-1" >Perfil:</label>
+                                <input class="form-control py-4" name="perfil" type="text" placeholder="Nueva perfil" 
+                                value="<%=data.perfil%>"/>
+                            </div>
+                            <div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0">
+                                 <input type="submit"  value ="Agregar" class="btn btn-primary" >
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+        </main>
+<%- include("./../incluir/footer.ejs") %>

@@ -1,0 +1,36 @@
+<%- include("./incluir/header.ejs")%>
+
+        <section>
+            <div class="portfolio-modal" tabindex="-1" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="close-modal" data-dismiss="modal"><img src="/assets/img/close-icon.svg" alt="Close modal" /></div>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="modal-body">
+                                        <!-- Project Details Go Here-->
+                                        <h2 class="text-uppercase"><%=datos.titulo%></h2>
+                                        <p class="item-intro text-muted"><%=datos.descripcion%></p>
+                                        <img class="img-fluid d-block mx-auto" src="<%=datos.imagen %>" alt="" />
+                                        
+                                        <ul class="list-inline">
+                                            <li>Marca: <%= datos.marcas.nombre%></li>
+                                            <li>Fecha de publicación: <%= datos.fecha_publi%></li>
+                                            <li>Vendedor: <%= datos.usuarios.nombre%></li>
+                                            <li>Categoria: <%= datos.categorias.nombre%></li>
+                                            <li>Codigo de Producto: <%= datos.id%></li>
+                                        </ul>
+                                        <a class="btn btn-primary" href="/listaProductos" type="button">
+                                            <div class="sb-nav-link-icon"><i class="fas fa-times mr-1"></i></div>
+                                            Cerrar
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<%- include("./incluir/footer.ejs")%>
